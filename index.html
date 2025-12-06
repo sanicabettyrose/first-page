@@ -40,13 +40,72 @@
         padding: 15px;
     }
 
-    .ul {
+    .site {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 25px;
+        background-color: white;
+        box-sizing: border-box;
+    }
+
+    .top-icons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: auto;
+    }
+
+    .top-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: black;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .link {
+        content: "|";
+        color: white;
+        margin: 10px;
+        font-weight: 500;
+    }
+
+    .icons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .icon {
+        height: 50px;
+        width: 50px;
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+        background: transparent;
+    }
+
+    .bar {
+        background-color: black;
+        padding: 20px;
         display: flex;
         justify-content: center;
-        gap: 60px;
-        background-color: white;
-        font-size: 20px;
-        letter-spacing: 1px;
+    }
+
+    .category {
+        display: flex;
+        max-width: 900px;
+        gap: 20px;
+        justify-content: space-between;
+        color: white;
+        font-weight: 600;
+        align-items: center;
+        letter-spacing: 0.5px;
     }
 
     .logo {
@@ -94,34 +153,45 @@
 </style>
 </head>
 <body>
-  <header>
-     <nav class="navigator">
-                <a href="index.html">Home</a>
-                <a href="about-us.html">About</a>
-                <a href="contact-us.html">Contact</a>
-            </nav>
-
-    <div class="icons">
-      <a href="#"><i class="fas fa-searh-bar"></i></a>
-      <a href="#"><i class="fas fa-shopping-cart"></i></a>
-    </div>
-
-    <div class="logo">
+  <header class="site">
+     <div class="logo">
       <p>MY CLOTHING <br> STORE</p>
     </div>
 
-    <nav>
-      <ul>
-        <li>T-shirt</li>
-        <li>Pants</li>
-        <li>Sando</li>
-        <li>Top</li>
-        <li>Dress</li>
-        <li>Polo</li>
-        <li>Jacket</li>
-      </ul>
-    </nav>
-  </header>
+        <div class="top-icons" aria-hidden="false">
+            <nav class="top-link" aria-label="top navigation">
+                <a href="#">Home</a>
+                <span class="sep"></span>
+                <a href="#">About</a>
+                <span class="sep"></span>
+                <a href="#">Services</a>
+                <span class="sep"></span>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="icons" aria-hidden="false">
+                <button class="icon" aria label="search">
+                    <img src=".//238ef84e-32e9-4f46-a981-b8a61c703f21">
+                </button>
+
+                <button class="icon" aria-label="cart">
+                <img src=".//734847be-801b-43dc-af14-949343a49a58">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="bar" role="navigation" aria-label="product categories">
+        <div class="category">
+            <div class="category">T-shirt</div>
+            <div class="category">Pants</div>
+            <div class="category">Sando</div>
+            <div class="category">Top</div>
+            <div class="category">Dress</div>
+            <div class="category">Polo</div>
+            <div class="category">Jacket</div>
+        </div>
+    </div>
 
   <section class="welcome">
     <h1>WELCOME TO MY SHOP!</h1>
@@ -138,15 +208,3 @@
       
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
