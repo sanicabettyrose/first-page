@@ -106,6 +106,45 @@
       text-align: left;
     }
 
+ body {
+    font-family: Arial, sans-serif;
+    background: white;
+    padding: 30px;
+    text-align: center;
+    color: #ff5757;
+  }
+  .text3 {
+    color: #ff5757;
+    font-weight: bold;
+    justify-content: center;
+  }
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+.item-1 {
+    text-align: center;
+    width: 250px;
+  }
+.img1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+  }
+.price-tag {
+    color: #ff5757;
+    font-weight: bold;
+  }
+.arrow {
+    font-size: 70px;
+    font-weight: bold;
+  }
+.navigator2 {
+      text-align: center;
+    }
+
 .navigator1 {
       text-align: right;
       justify-content: right;
@@ -126,7 +165,7 @@
     padding: 10px;
     }
 
-.text {
+.text2 {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 40%;
@@ -171,4 +210,5 @@
     margin-top: 5px;
     
 }
+
 
